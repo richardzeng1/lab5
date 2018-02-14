@@ -1,0 +1,22 @@
+module Part2(SW, HEX0, LEDR);
+
+endmodule
+
+module counter(SW, HEX0);
+endmodule
+
+module mux(SW, Q);
+    input [1:0] SW;
+	 output reg Q;
+	 
+	 if (SW == 2'b00)
+	     Q = 0;
+	 else if (SW == 2'b01)
+	     Q = 26'b10111110101111000001111111;
+	 else if (SW ==2'b10)
+	     Q = 27'b101111101011110000011111111;
+	 else
+	     Q = 28'b1011111010111100000111111111;
+endmodule
+
+

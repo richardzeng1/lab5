@@ -1,0 +1,223 @@
+|Part2
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+HEX0[0] << count:p.HEX0
+HEX0[1] << count:p.HEX0
+HEX0[2] << count:p.HEX0
+HEX0[3] << count:p.HEX0
+HEX0[4] << count:p.HEX0
+HEX0[5] << count:p.HEX0
+HEX0[6] << count:p.HEX0
+LEDR[0] << count:p.LEDR
+LEDR[1] << count:p.LEDR
+LEDR[2] << count:p.LEDR
+LEDR[3] << count:p.LEDR
+LEDR[4] << count:p.LEDR
+LEDR[5] << count:p.LEDR
+LEDR[6] << count:p.LEDR
+LEDR[7] << count:p.LEDR
+CLOCK_50 => CLOCK_50.IN5
+
+
+|Part2|mux:m
+w[0] => Q.DATAB
+w[1] => Q.DATAB
+w[2] => Q.DATAB
+w[3] => Q.DATAA
+SW[0] => Equal0.IN1
+SW[0] => Equal1.IN0
+SW[0] => Equal2.IN1
+SW[1] => Equal0.IN0
+SW[1] => Equal1.IN1
+SW[1] => Equal2.IN0
+Q <= Q.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part2|countDown0:cd0
+total[0] <= clock.DB_MAX_OUTPUT_PORT_TYPE
+total[1] <= <GND>
+total[2] <= <GND>
+total[3] <= <GND>
+total[4] <= <GND>
+total[5] <= <GND>
+total[6] <= <GND>
+total[7] <= <GND>
+total[8] <= <GND>
+total[9] <= <GND>
+total[10] <= <GND>
+total[11] <= <GND>
+total[12] <= <GND>
+total[13] <= <GND>
+total[14] <= <GND>
+total[15] <= <GND>
+total[16] <= <GND>
+total[17] <= <GND>
+total[18] <= <GND>
+total[19] <= <GND>
+total[20] <= <GND>
+total[21] <= <GND>
+total[22] <= <GND>
+total[23] <= <GND>
+total[24] <= <GND>
+total[25] <= <GND>
+total[26] <= <GND>
+total[27] <= <GND>
+total[28] <= <GND>
+clock => total[0].DATAIN
+
+
+|Part2|countDown1:cd1
+out <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+clock => total[0].CLK
+clock => total[1].CLK
+clock => total[2].CLK
+clock => total[3].CLK
+clock => total[4].CLK
+clock => total[5].CLK
+clock => total[6].CLK
+clock => total[7].CLK
+clock => total[8].CLK
+clock => total[9].CLK
+clock => total[10].CLK
+clock => total[11].CLK
+clock => total[12].CLK
+clock => total[13].CLK
+clock => total[14].CLK
+clock => total[15].CLK
+clock => total[16].CLK
+clock => total[17].CLK
+clock => total[18].CLK
+clock => total[19].CLK
+clock => total[20].CLK
+clock => total[21].CLK
+clock => total[22].CLK
+clock => total[23].CLK
+clock => total[24].CLK
+clock => total[25].CLK
+clock => total[26].CLK
+clock => total[27].CLK
+clock => total[28].CLK
+
+
+|Part2|countDown2:cd2
+out <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+clock => total[0].CLK
+clock => total[1].CLK
+clock => total[2].CLK
+clock => total[3].CLK
+clock => total[4].CLK
+clock => total[5].CLK
+clock => total[6].CLK
+clock => total[7].CLK
+clock => total[8].CLK
+clock => total[9].CLK
+clock => total[10].CLK
+clock => total[11].CLK
+clock => total[12].CLK
+clock => total[13].CLK
+clock => total[14].CLK
+clock => total[15].CLK
+clock => total[16].CLK
+clock => total[17].CLK
+clock => total[18].CLK
+clock => total[19].CLK
+clock => total[20].CLK
+clock => total[21].CLK
+clock => total[22].CLK
+clock => total[23].CLK
+clock => total[24].CLK
+clock => total[25].CLK
+clock => total[26].CLK
+clock => total[27].CLK
+clock => total[28].CLK
+
+
+|Part2|countDown3:cd3
+out <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+clock => total[0].CLK
+clock => total[1].CLK
+clock => total[2].CLK
+clock => total[3].CLK
+clock => total[4].CLK
+clock => total[5].CLK
+clock => total[6].CLK
+clock => total[7].CLK
+clock => total[8].CLK
+clock => total[9].CLK
+clock => total[10].CLK
+clock => total[11].CLK
+clock => total[12].CLK
+clock => total[13].CLK
+clock => total[14].CLK
+clock => total[15].CLK
+clock => total[16].CLK
+clock => total[17].CLK
+clock => total[18].CLK
+clock => total[19].CLK
+clock => total[20].CLK
+clock => total[21].CLK
+clock => total[22].CLK
+clock => total[23].CLK
+clock => total[24].CLK
+clock => total[25].CLK
+clock => total[26].CLK
+clock => total[27].CLK
+clock => total[28].CLK
+
+
+|Part2|count:p
+out[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enable => out[0]~reg0.ENA
+enable => out[1]~reg0.ENA
+enable => out[2]~reg0.ENA
+enable => out[3]~reg0.ENA
+enable => out[4]~reg0.ENA
+enable => out[5]~reg0.ENA
+enable => out[6]~reg0.ENA
+enable => out[7]~reg0.ENA
+clock => out[0]~reg0.CLK
+clock => out[1]~reg0.CLK
+clock => out[2]~reg0.CLK
+clock => out[3]~reg0.CLK
+clock => out[4]~reg0.CLK
+clock => out[5]~reg0.CLK
+clock => out[6]~reg0.CLK
+clock => out[7]~reg0.CLK
+HEX0[0] <= hex_decoder:ok.segments[0]
+HEX0[1] <= hex_decoder:ok.segments[1]
+HEX0[2] <= hex_decoder:ok.segments[2]
+HEX0[3] <= hex_decoder:ok.segments[3]
+HEX0[4] <= hex_decoder:ok.segments[4]
+HEX0[5] <= hex_decoder:ok.segments[5]
+HEX0[6] <= hex_decoder:ok.segments[6]
+LEDR[0] <= out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Part2|count:p|hex_decoder:ok
+hex_digit[0] => Decoder0.IN3
+hex_digit[1] => Decoder0.IN2
+hex_digit[2] => Decoder0.IN1
+hex_digit[3] => Decoder0.IN0
+segments[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+segments[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+segments[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+segments[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+segments[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+segments[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+segments[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,117 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u4/c6/05/zengrun1/Desktop/CSC258/Lab 5/Part3
+vcount
+Z1 !s110 1518637144
+!i10b 1
+!s100 d7VDf6E@z2H=eO0@>n:;O2
+IgBWD^3OnEl63IRhJDDV=`3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1518637140
+Z4 8Part3.v
+Z5 FPart3.v
+L0 110
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1518637143.000000
+Z8 !s107 Part3.v|
+Z9 !s90 -reportprogress|300|-timescale|1ns/1ns|Part3.v|
+!i113 1
+Z10 o-timescale 1ns/1ns
+Z11 tCvgOpt 0
+vcountDown2
+R1
+!i10b 1
+!s100 <@jKIQ[8MF1NSSn7ZRKOV3
+I98^hjXDTOo:imh81;[W252
+R2
+R0
+R3
+R4
+R5
+L0 79
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+ncount@down2
+vmux
+R1
+!i10b 1
+!s100 Y[@?LoS50lcVEzZ3aQPiO2
+I14cN@UQPV5Um6`A]DSooV2
+R2
+R0
+R3
+R4
+R5
+L0 127
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vPart3
+R1
+!i10b 1
+!s100 MiE@Uc4=9M?>OKHZgHL^E3
+I9NLjVdE?>KH;dZgm6WCnF2
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@part3
+vregister
+R1
+!i10b 1
+!s100 gJC5IP8LGFgNzhBRUaFOB3
+IleSlDR?496]Rnj5m7I9L<2
+R2
+R0
+R3
+R4
+R5
+L0 42
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

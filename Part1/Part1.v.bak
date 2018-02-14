@@ -1,0 +1,6 @@
+module TFlipFlop (T, clock, q, notq);
+    input T, clock;
+	 output q, notq;
+	 
+	 case()
+end module
